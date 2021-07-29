@@ -1,0 +1,11 @@
+create sequence eg
+start with 1001
+increment by 1
+minvalue 1
+maxvalue 2000
+cycle;
+
+create table abcd(ID number(10),Name char(25));
+
+insert into abcd values(eg.nextval,'Hermoine');
+insert into abcd values(eg.nextval,'Harry');
