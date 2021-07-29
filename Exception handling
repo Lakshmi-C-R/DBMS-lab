@@ -1,0 +1,12 @@
+Declare
+a int:=10;
+b int:=0;
+c int;
+begin
+c:=a/b;
+dbms_output.put_line(&#39;The result:&#39;||c);
+exception
+when zero_divide then
+dbms_output.put_line(&#39;Dividing by 0! Check the value again&#39;);
+End;
+/
