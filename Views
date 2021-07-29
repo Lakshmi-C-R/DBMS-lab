@@ -1,2 +1,5 @@
 create view name as
 select Name,sem from clgdata;
+
+
+//Table named "clgdata" must be exist
