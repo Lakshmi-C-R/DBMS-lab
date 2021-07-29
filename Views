@@ -1,0 +1,2 @@
+create view name as
+select Name,sem from clgdata;
