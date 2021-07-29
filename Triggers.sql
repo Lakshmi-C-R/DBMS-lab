@@ -1,0 +1,12 @@
+create trigger clgsem
+after insert or update of sem
+on clg for each row
+begin
+if(:new.sem&gt;8)
+then
+dbms_output.put_line(&#39;Invalid sem&#39;);
+else
+dbms_output.put_line(&#39;Valid sem&#39;);
+end if;
+End;
+/
