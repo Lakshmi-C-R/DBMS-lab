@@ -10,3 +10,6 @@ dbms_output.put_line(&#39;Valid sem&#39;);
 end if;
 End;
 /
+
+
+//Before that,create a table named "clg"//
