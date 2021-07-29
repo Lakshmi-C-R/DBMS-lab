@@ -1,0 +1,19 @@
+Declare
+a number;
+b number;
+c number;
+Procedure findmin(x in number,y in number,z out number) is
+Begin
+If x&lt;y then
+z:=x;
+Else
+z:=y;
+end if;
+End;
+Begin
+a:=25;
+b:=9;
+findmin(a,b,c);
+dbms_output.put_line(&#39;Minimum number is:&#39;||c);
+End;
+/
