@@ -1,0 +1,16 @@
+declare total_rows number(5);
+c_ro students.roll_no%type;
+c_name students.name%type;
+c_branch students.branch%type;
+cursor c_students is 
+select roll_no,name,branch from students;
+begin
+open c_students;
+loop
+fetch c_students into c_ro,c_name,c_branch;
+exit when c_students%notfound;
+dbms_output.put_line(c_ro||''||c_name||''||c_branch);
+end loop;
+close c_students;
+end;
+/
